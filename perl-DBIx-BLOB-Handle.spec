@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	DBIx
 %define		pnam	BLOB-Handle
-Summary:	DBIx::BLOB::Handle - Read Database Large Object Binaries from file handles
+Summary:	DBIx::BLOB::Handle - read database large object binaries from file handles
 Summary(pl):	DBIx::BLOB::Handle - czytanie obiektów BLOB z uchwytów plików
 Name:		perl-DBIx-BLOB-Handle
 Version:	0.2
