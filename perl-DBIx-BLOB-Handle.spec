@@ -9,13 +9,13 @@ Summary:	DBIx::BLOB::Handle - Read Database Large Object Binaries from file hand
 Summary(pl):	DBIx::BLOB::Handle - czytanie obiektów BLOB z uchwytów plików
 Name:		perl-DBIx-BLOB-Handle
 Version:	0.2
-Release:	3
+Release:	4
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-DBI
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -43,7 +43,8 @@ linia po linii lub kawa³ek po kawa³ku z normalnego uchwytu pliku?
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -58,6 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%dir %{perl_sitelib}/DBIx/BLOB
-%{perl_sitelib}/DBIx/BLOB/*.pm
+%dir %{perl_vendorlib}/DBIx/BLOB
+%{perl_vendorlib}/DBIx/BLOB/*.pm
 %{_mandir}/man3/*
