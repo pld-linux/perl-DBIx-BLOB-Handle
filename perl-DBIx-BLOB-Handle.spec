@@ -9,7 +9,7 @@ Summary:	DBIx::BLOB::Handle - Read Database Large Object Binaries from file hand
 Summary(pl):	DBIx::BLOB::Handle - czytanie obiektów BLOB z uchwytów plików
 Name:		perl-DBIx-BLOB-Handle
 Version:	0.2
-Release:	3
+Release:	4
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
