@@ -43,7 +43,7 @@ linia po linii lub kawa³ek po kawa³ku z normalnego uchwytu pliku?
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %{!?_without_tests:%{__make} test}
