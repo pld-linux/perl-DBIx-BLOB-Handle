@@ -1,14 +1,15 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	DBIx
-%define	pnam	BLOB-Handle
+%define		pdir	DBIx
+%define		pnam	BLOB-Handle
 Summary:	DBIx::BLOB::Handle - Read Database Large Object Binaries from file handles
 Summary(pl):	DBIx::BLOB::Handle - czytanie obiektów BLOB z uchwytów plików
 Name:		perl-DBIx-BLOB-Handle
 Version:	0.2
-Release:	2
+Release:	3
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -56,5 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%dir %{perl_sitelib}/DBIx/BLOB
 %{perl_sitelib}/DBIx/BLOB/*.pm
 %{_mandir}/man3/*
