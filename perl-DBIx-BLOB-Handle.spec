@@ -6,7 +6,7 @@
 %define		pdir	DBIx
 %define		pnam	BLOB-Handle
 Summary:	DBIx::BLOB::Handle - read database large object binaries from file handles
-Summary(pl):	DBIx::BLOB::Handle - czytanie obiektów BLOB z uchwytów plików
+Summary(pl.UTF-8):   DBIx::BLOB::Handle - czytanie obiektÃ³w BLOB z uchwytÃ³w plikÃ³w
 Name:		perl-DBIx-BLOB-Handle
 Version:	0.2
 Release:	5
@@ -30,15 +30,15 @@ method yourself to process chunks of data from the LOB or even dump
 its contents into a scalar, but maybe it would be nice to read the
 data line by line or piece by piece from a familiar old filehandle?!
 
-%description -l pl
-DBI ma metodê blob_copy_to_file, która przyjmuje parametr bêd±cy
-uchwytem pliku i kopiuje du¿e obiekty bazodanowe (LOB) do tego
-uchwytu. Mimo to, ta metoda jest nieudokumentowana i zawiera b³êdy.
-Stworzenie podobnej metody jest proste, ale co je¶li trzeba czytaæ
-dane i przeprowadzaæ na nich operacje? Mo¿na u¿yæ metody blob_read z
-DBI do przetwarzania fragmentów danych z obiektu LOB albo nawet
-zrzucaæ zawarto¶æ do zmiennej, ale mo¿e przyjemniej jest czytaæ dane
-linia po linii lub kawa³ek po kawa³ku z normalnego uchwytu pliku?
+%description -l pl.UTF-8
+DBI ma metodÄ™ blob_copy_to_file, ktÃ³ra przyjmuje parametr bÄ™dÄ…cy
+uchwytem pliku i kopiuje duÅ¼e obiekty bazodanowe (LOB) do tego
+uchwytu. Mimo to, ta metoda jest nieudokumentowana i zawiera bÅ‚Ä™dy.
+Stworzenie podobnej metody jest proste, ale co jeÅ›li trzeba czytaÄ‡
+dane i przeprowadzaÄ‡ na nich operacje? MoÅ¼na uÅ¼yÄ‡ metody blob_read z
+DBI do przetwarzania fragmentÃ³w danych z obiektu LOB albo nawet
+zrzucaÄ‡ zawartoÅ›Ä‡ do zmiennej, ale moÅ¼e przyjemniej jest czytaÄ‡ dane
+linia po linii lub kawaÅ‚ek po kawaÅ‚ku z normalnego uchwytu pliku?
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
